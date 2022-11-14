@@ -65,8 +65,6 @@ function Header() {
   return (
     <StyledHeader>
       <StyledBanner />
-      {/* <img src="banner"/> */}
-
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
         <div>
@@ -78,7 +76,7 @@ function Header() {
   );
 }
 
-  function Timeline({searchValue, ...propriedades}) {
+function Timeline({searchValue, ...propriedades}) {
   /*console.log("Dentro do componente", propriedades.playlists);*/
   const playlistNames = Object.keys(propriedades.playlists);
   return (
